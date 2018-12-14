@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        echo 'Hi'
+        git(url: 'https://github.com/kikiSt/tictactoe', branch: 'master')
       }
     }
   }
